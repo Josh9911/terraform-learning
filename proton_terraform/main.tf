@@ -60,7 +60,7 @@ resource "aws_security_group" "ecs_host_security_group" {
 
 resource "aws_iam_instance_profile" "ec2_instance_profile" {
   role = aws_iam_role.ecs_host_instance_role.name
-}3
+}
 
 resource "aws_launch_configuration" "ec2_launch_config" {
   image_id             = data.aws_ssm_parameter.ami_id.value
