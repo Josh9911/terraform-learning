@@ -23,7 +23,7 @@ module "kms_complete" {
     deletion_window_in_days = 7
     description             = "Test key 2"
     enable_key_rotation     = false
-    is_enabled              = false
+    is_enabled              = true
     key_usage               = "ENCRYPT_DECRYPT"
     multi_region            = false
 
